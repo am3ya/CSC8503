@@ -1,285 +1,285 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\CMakeFiles\CSC8503CoreClasses.dir\cmake_pch.cxx">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\CMakeFiles\CSC8503CoreClasses.dir\cmake_pch.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\Debug.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\Debug.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\GameObject.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\GameObject.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\GameWorld.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\GameWorld.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\RenderObject.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\RenderObject.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\Transform.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\Transform.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\Debug.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\Debug.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\GameObject.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\GameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\GameWorld.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\GameWorld.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\RenderObject.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\RenderObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\Transform.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\Transform.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\BehaviourAction.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\BehaviourAction.h">
       <Filter>AI\Behaviour Trees</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\BehaviourNode.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\BehaviourNode.h">
       <Filter>AI\Behaviour Trees</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\BehaviourNodeWithChildren.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\BehaviourNodeWithChildren.h">
       <Filter>AI\Behaviour Trees</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\BehaviourSelector.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\BehaviourSelector.h">
       <Filter>AI\Behaviour Trees</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\BehaviourSelector.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\BehaviourSelector.cpp">
       <Filter>AI\Behaviour Trees</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\BehaviourSequence.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\BehaviourSequence.h">
       <Filter>AI\Behaviour Trees</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\BehaviourSequence.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\BehaviourSequence.cpp">
       <Filter>AI\Behaviour Trees</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\PushdownMachine.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\PushdownMachine.h">
       <Filter>AI\Pushdown Automata</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\PushdownMachine.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\PushdownMachine.cpp">
       <Filter>AI\Pushdown Automata</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\PushdownState.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\PushdownState.h">
       <Filter>AI\Pushdown Automata</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\PushdownState.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\PushdownState.cpp">
       <Filter>AI\Pushdown Automata</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\State.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\State.h">
       <Filter>AI\State Machine</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\StateMachine.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\StateMachine.h">
       <Filter>AI\State Machine</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\StateMachine.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\StateMachine.cpp">
       <Filter>AI\State Machine</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\StateTransition.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\StateTransition.h">
       <Filter>AI\State Machine</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NavigationGrid.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NavigationGrid.h">
       <Filter>AI\Pathfinding</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NavigationGrid.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NavigationGrid.cpp">
       <Filter>AI\Pathfinding</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NavigationMesh.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NavigationMesh.cpp">
       <Filter>AI\Pathfinding</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NavigationMesh.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NavigationMesh.h">
       <Filter>AI\Pathfinding</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NavigationMap.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NavigationMap.h">
       <Filter>AI\Pathfinding</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NavigationPath.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NavigationPath.h">
       <Filter>AI\Pathfinding</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\AABBVolume.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\AABBVolume.h">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\CapsuleVolume.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\CapsuleVolume.h">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\CapsuleVolume.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\CapsuleVolume.cpp">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\CollisionDetection.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\CollisionDetection.h">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\CollisionDetection.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\CollisionDetection.cpp">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\CollisionVolume.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\CollisionVolume.h">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\OBBVolume.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\OBBVolume.h">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\QuadTree.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\QuadTree.h">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\QuadTree.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\QuadTree.cpp">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\Ray.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\Ray.h">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\SphereVolume.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\SphereVolume.h">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\GameClient.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\GameClient.h">
       <Filter>Networking</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\GameClient.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\GameClient.cpp">
       <Filter>Networking</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\GameServer.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\GameServer.h">
       <Filter>Networking</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\GameServer.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\GameServer.cpp">
       <Filter>Networking</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NetworkBase.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NetworkBase.h">
       <Filter>Networking</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NetworkBase.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NetworkBase.cpp">
       <Filter>Networking</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NetworkObject.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NetworkObject.h">
       <Filter>Networking</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NetworkObject.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NetworkObject.cpp">
       <Filter>Networking</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NetworkState.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NetworkState.h">
       <Filter>Networking</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\NetworkState.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\NetworkState.cpp">
       <Filter>Networking</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\Constraint.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\Constraint.h">
       <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\PositionConstraint.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\PositionConstraint.cpp">
       <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\PositionConstraint.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\PositionConstraint.h">
       <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\OrientationConstraint.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\OrientationConstraint.cpp">
       <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\OrientationConstraint.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\OrientationConstraint.h">
       <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\PhysicsObject.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\PhysicsObject.cpp">
       <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\PhysicsObject.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\PhysicsObject.h">
       <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\PhysicsSystem.cpp">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\PhysicsSystem.cpp">
       <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\PhysicsSystem.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\PhysicsSystem.h">
       <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\callbacks.c">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\callbacks.c">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\list.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\list.h">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\list.c">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\list.c">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\protocol.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\protocol.h">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\protocol.c">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\protocol.c">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\win32.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\win32.h">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\win32.c">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\win32.c">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\enet.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\enet.h">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\time.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\time.h">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\types.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\types.h">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\utility.h">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\utility.h">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\compress.c">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\compress.c">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\host.c">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\host.c">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\packet.c">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\packet.c">
       <Filter>eNet</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503CoreClasses\enet\peer.c">
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\enet\peer.c">
       <Filter>eNet</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\c4011955\CSC8503CoreClasses\CMakeFiles\CSC8503CoreClasses.dir\Debug\cmake_pch.hxx">
+    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\CMakeFiles\CSC8503CoreClasses.dir\Debug\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\c4011955\CSC8503CoreClasses\CMakeFiles\CSC8503CoreClasses.dir\Release\cmake_pch.hxx">
+    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\CMakeFiles\CSC8503CoreClasses.dir\Release\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\c4011955\CSC8503CoreClasses\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="AI">
-      <UniqueIdentifier>{ED42474B-EF6B-3F71-A495-998A0AF3E8CB}</UniqueIdentifier>
+      <UniqueIdentifier>{69B6F03C-F244-3057-BFFE-C3C23A738E51}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\Behaviour Trees">
-      <UniqueIdentifier>{8C5B9F48-E2E8-353C-A4A4-90D14F2DB7B5}</UniqueIdentifier>
+      <UniqueIdentifier>{5317F791-066F-38B7-8AFB-64C638E7FCC0}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\Pathfinding">
-      <UniqueIdentifier>{E90FE3BC-AACD-38C0-9869-E4378E15DBE8}</UniqueIdentifier>
+      <UniqueIdentifier>{E863C9C6-B84A-3283-B6F8-1CE0A0BBF68E}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\Pushdown Automata">
-      <UniqueIdentifier>{988C87A6-0AB7-397D-9AAB-6D3D77F9BE87}</UniqueIdentifier>
+      <UniqueIdentifier>{8F9CAE49-417C-3750-B0B1-606A3F4FC15E}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\State Machine">
-      <UniqueIdentifier>{1B5655D5-F7CF-3134-BB56-2886183A9387}</UniqueIdentifier>
+      <UniqueIdentifier>{8899F6DD-DDB2-38A9-8822-8BC9BE0FBBC0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Collision Detection">
-      <UniqueIdentifier>{84F5DE41-3262-3D27-87D6-2DEC48BCAF06}</UniqueIdentifier>
+      <UniqueIdentifier>{F10AAA0C-A92E-3D55-A1A7-BABB84205513}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{F75DC17F-D866-32BF-91C2-F500175D77C1}</UniqueIdentifier>
+      <UniqueIdentifier>{CE6674F0-897B-31B5-BDB0-F3F5A8B3957B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Networking">
-      <UniqueIdentifier>{F9F1E1F6-6592-398F-AA13-59ED412815B5}</UniqueIdentifier>
+      <UniqueIdentifier>{8192EAF7-D5DE-387C-A770-D73D37FB82FA}</UniqueIdentifier>
     </Filter>
     <Filter Include="Physics">
-      <UniqueIdentifier>{0504BF6F-2CF7-3522-8B74-C7B0AB073831}</UniqueIdentifier>
+      <UniqueIdentifier>{C341A797-C8B5-3169-A751-A8C8C808A47B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Precompile Header File">
-      <UniqueIdentifier>{1F4EC7F1-AD58-33FD-B785-EF804CA09434}</UniqueIdentifier>
+      <UniqueIdentifier>{41EDD1EF-AB8F-3AD6-B476-598B198B9EAF}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{D1AC32A0-CCC3-3A07-B3B5-98D2FFAE06FE}</UniqueIdentifier>
+      <UniqueIdentifier>{9E117DA8-5637-355E-AF46-DE64AA4079CA}</UniqueIdentifier>
     </Filter>
     <Filter Include="eNet">
-      <UniqueIdentifier>{4AA77FDD-A5A9-36E5-9DC5-616F3B314AC4}</UniqueIdentifier>
+      <UniqueIdentifier>{D1DF28FB-5EE8-311B-B4D7-C301135A1C58}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
