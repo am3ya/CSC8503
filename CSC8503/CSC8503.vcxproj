@@ -14,7 +14,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7B9FE932-FCD7-3F2C-96F9-539166C2A0BB}</ProjectGuid>
+    <ProjectGuid>{3CBC841D-8EB2-32E5-975C-A2FECEFF4807}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -42,13 +42,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\c4011955\x64\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Ameya\CSC8503 Code 2024\x64\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CSC8503.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CSC8503</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\c4011955\x64\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Ameya\CSC8503 Code 2024\x64\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CSC8503.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CSC8503</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
@@ -57,7 +57,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\c4011955\CSC8503\..\OpenGLRendering;C:\Users\c4011955\CSC8503\..\NCLCoreClasses;C:\Users\c4011955\CSC8503\..\CSC8503CoreClasses;C:\Users\c4011955\NCLCoreClasses;C:\Users\c4011955\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\OpenGLRendering;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\CSC8503CoreClasses;C:\Users\Ameya\CSC8503 Code 2024\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <ConformanceMode>true</ConformanceMode>
@@ -68,24 +68,24 @@
       <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>C:/Users/c4011955/CSC8503/CSC8503.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile>C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CSC8503.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SDLCheck>true</SDLCheck>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION="C:/Users/c4011955/Assets/";NOMINMAX;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION="C:/Users/Ameya/CSC8503 Code 2024/Assets/";NOMINMAX;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION=\"C:/Users/c4011955/Assets/\";NOMINMAX;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\c4011955\CSC8503\..\OpenGLRendering;C:\Users\c4011955\CSC8503\..\NCLCoreClasses;C:\Users\c4011955\CSC8503\..\CSC8503CoreClasses;C:\Users\c4011955\NCLCoreClasses;C:\Users\c4011955\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION=\"C:/Users/Ameya/CSC8503 Code 2024/Assets/\";NOMINMAX;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\OpenGLRendering;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\CSC8503CoreClasses;C:\Users\Ameya\CSC8503 Code 2024\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\c4011955\CSC8503\..\OpenGLRendering;C:\Users\c4011955\CSC8503\..\NCLCoreClasses;C:\Users\c4011955\CSC8503\..\CSC8503CoreClasses;C:\Users\c4011955\NCLCoreClasses;C:\Users\c4011955\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\OpenGLRendering;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\CSC8503CoreClasses;C:\Users\Ameya\CSC8503 Code 2024\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -98,8 +98,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/c4011955/x64/Debug/CSC8503.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/c4011955/x64/Debug/CSC8503.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Ameya/CSC8503 Code 2024/x64/Debug/CSC8503.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Ameya/CSC8503 Code 2024/x64/Debug/CSC8503.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -108,7 +108,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\c4011955\CSC8503\..\OpenGLRendering;C:\Users\c4011955\CSC8503\..\NCLCoreClasses;C:\Users\c4011955\CSC8503\..\CSC8503CoreClasses;C:\Users\c4011955\NCLCoreClasses;C:\Users\c4011955\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\OpenGLRendering;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\CSC8503CoreClasses;C:\Users\Ameya\CSC8503 Code 2024\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ConformanceMode>true</ConformanceMode>
@@ -121,24 +121,24 @@
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>C:/Users/c4011955/CSC8503/CSC8503.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile>C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CSC8503.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SDLCheck>true</SDLCheck>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION="C:/Users/c4011955/Assets/";NOMINMAX;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION="C:/Users/Ameya/CSC8503 Code 2024/Assets/";NOMINMAX;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION=\"C:/Users/c4011955/Assets/\";NOMINMAX;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\c4011955\CSC8503\..\OpenGLRendering;C:\Users\c4011955\CSC8503\..\NCLCoreClasses;C:\Users\c4011955\CSC8503\..\CSC8503CoreClasses;C:\Users\c4011955\NCLCoreClasses;C:\Users\c4011955\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;_WINSOCKAPI_;_WINSOCK2API_;_WINSOCK_DEPRECATED_NO_WARNINGS;ASSETROOTLOCATION=\"C:/Users/Ameya/CSC8503 Code 2024/Assets/\";NOMINMAX;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\OpenGLRendering;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\CSC8503CoreClasses;C:\Users\Ameya\CSC8503 Code 2024\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\c4011955\CSC8503\..\OpenGLRendering;C:\Users\c4011955\CSC8503\..\NCLCoreClasses;C:\Users\c4011955\CSC8503\..\CSC8503CoreClasses;C:\Users\c4011955\NCLCoreClasses;C:\Users\c4011955\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\OpenGLRendering;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\CSC8503\..\CSC8503CoreClasses;C:\Users\Ameya\CSC8503 Code 2024\NCLCoreClasses;C:\Users\Ameya\CSC8503 Code 2024\OpenGLRendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -152,9 +152,9 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/c4011955/x64/Release/CSC8503.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/Ameya/CSC8503 Code 2024/x64/Release/CSC8503.lib</ImportLibrary>
       <OptimizeReferences>true</OptimizeReferences>
-      <ProgramDataBaseFile>C:/Users/c4011955/x64/Release/CSC8503.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/Ameya/CSC8503 Code 2024/x64/Release/CSC8503.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -162,11 +162,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\c4011955\CSC8503\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/c4011955/CSC8503/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/c4011955 -BC:/Users/c4011955 --check-stamp-file C:/Users/c4011955/CSC8503/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Ameya/CSC8503 Code 2024" "-BC:/Users/Ameya/CSC8503 Code 2024" --check-stamp-file "C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -174,12 +174,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\c4011955\CMake\Default.cmake;C:\Users\c4011955\CMake\DefaultCXX.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\c4011955\CSC8503\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Ameya\CSC8503 Code 2024\CMake\Default.cmake;C:\Users\Ameya\CSC8503 Code 2024\CMake\DefaultCXX.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Ameya\CSC8503 Code 2024\CSC8503\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/c4011955/CSC8503/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/c4011955 -BC:/Users/c4011955 --check-stamp-file C:/Users/c4011955/CSC8503/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Ameya/CSC8503 Code 2024" "-BC:/Users/Ameya/CSC8503 Code 2024" --check-stamp-file "C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -187,72 +187,72 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\c4011955\CMake\Default.cmake;C:\Users\c4011955\CMake\DefaultCXX.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\c4011955\CSC8503\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Ameya\CSC8503 Code 2024\CMake\Default.cmake;C:\Users\Ameya\CSC8503 Code 2024\CMake\DefaultCXX.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Ameya\CSC8503 Code 2024\CSC8503\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\c4011955\CSC8503\CMakeFiles\CSC8503.dir\cmake_pch.cxx">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\CMakeFiles\CSC8503.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/c4011955/CSC8503/CSC8503.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CSC8503.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/c4011955/CSC8503/CSC8503.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CSC8503.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
-    <ClInclude Include="C:\Users\c4011955\CSC8503\GameTechRenderer.h" />
-    <ClInclude Include="C:\Users\c4011955\CSC8503\NetworkPlayer.h" />
-    <ClInclude Include="C:\Users\c4011955\CSC8503\NetworkedGame.h" />
-    <ClInclude Include="C:\Users\c4011955\CSC8503\StateGameObject.h" />
-    <ClInclude Include="C:\Users\c4011955\CSC8503\TutorialGame.h" />
-    <ClCompile Include="C:\Users\c4011955\CSC8503\GameTechRenderer.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\GameTechRenderer.h" />
+    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\NetworkPlayer.h" />
+    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\NetworkedGame.h" />
+    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\StateGameObject.h" />
+    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\TutorialGame.h" />
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\GameTechRenderer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503\Main.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\Main.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503\NetworkPlayer.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\NetworkPlayer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503\NetworkedGame.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\NetworkedGame.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503\StateGameObject.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\StateGameObject.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
-    <ClCompile Include="C:\Users\c4011955\CSC8503\TutorialGame.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/c4011955/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\TutorialGame.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Ameya/CSC8503 Code 2024/CSC8503/CMakeFiles/CSC8503.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
-    <ClInclude Include="C:\Users\c4011955\CSC8503\CMakeFiles\CSC8503.dir\Debug\cmake_pch.hxx" />
-    <ClInclude Include="C:\Users\c4011955\CSC8503\CMakeFiles\CSC8503.dir\Release\cmake_pch.hxx" />
+    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\CMakeFiles\CSC8503.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\CMakeFiles\CSC8503.dir\Release\cmake_pch.hxx" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\c4011955\ZERO_CHECK.vcxproj">
-      <Project>{15601EEA-32A0-39D3-A3CB-1F617E0F7D98}</Project>
+    <ProjectReference Include="C:\Users\Ameya\CSC8503 Code 2024\ZERO_CHECK.vcxproj">
+      <Project>{D85B1EE1-F872-3BEA-B570-7AC0D87D9E27}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\c4011955\CSC8503CoreClasses\CSC8503CoreClasses.vcxproj">
-      <Project>{AC795285-A0FB-33CA-BD8C-ADC0215C7343}</Project>
+    <ProjectReference Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\CSC8503CoreClasses.vcxproj">
+      <Project>{5D1D8C30-AC1A-3AD8-8BBE-2EE6930688DB}</Project>
       <Name>CSC8503CoreClasses</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\c4011955\NCLCoreClasses\NCLCoreClasses.vcxproj">
-      <Project>{4A4DB6E3-0181-3B1A-99D8-346663490396}</Project>
+    <ProjectReference Include="C:\Users\Ameya\CSC8503 Code 2024\NCLCoreClasses\NCLCoreClasses.vcxproj">
+      <Project>{68F929D6-E808-3C2A-BF9C-FA208DEC74C9}</Project>
       <Name>NCLCoreClasses</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\c4011955\OpenGLRendering\OpenGLRendering.vcxproj">
-      <Project>{EBF889F0-21EE-3B5C-9FB9-64542519D888}</Project>
+    <ProjectReference Include="C:\Users\Ameya\CSC8503 Code 2024\OpenGLRendering\OpenGLRendering.vcxproj">
+      <Project>{AC0C7CA7-E129-32B2-828D-621A0EAD13FE}</Project>
       <Name>OpenGLRendering</Name>
     </ProjectReference>
   </ItemGroup>
