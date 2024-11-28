@@ -1,63 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\CMakeFiles\CSC8503.dir\cmake_pch.cxx">
+    <ClCompile Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\CMakeFiles\CSC8503.dir\cmake_pch.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\GameTechRenderer.cpp">
+    <ClCompile Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\GameTechRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\Main.cpp">
+    <ClCompile Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\NetworkPlayer.cpp">
+    <ClCompile Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\NetworkPlayer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\NetworkedGame.cpp">
+    <ClCompile Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\NetworkedGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\StateGameObject.cpp">
+    <ClCompile Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\StateGameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\TutorialGame.cpp">
+    <ClCompile Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\TutorialGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\GameTechRenderer.h">
+    <ClInclude Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\GameTechRenderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\NetworkPlayer.h">
+    <ClInclude Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\NetworkPlayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\NetworkedGame.h">
+    <ClInclude Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\NetworkedGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\StateGameObject.h">
+    <ClInclude Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\StateGameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\TutorialGame.h">
+    <ClInclude Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\TutorialGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\CMakeFiles\CSC8503.dir\Debug\cmake_pch.hxx">
+    <ClInclude Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\CMakeFiles\CSC8503.dir\Debug\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\CMakeFiles\CSC8503.dir\Release\cmake_pch.hxx">
+    <ClInclude Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\CMakeFiles\CSC8503.dir\Release\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\c4011955\CSC8503 Code 2024\CSC8503\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{CE6674F0-897B-31B5-BDB0-F3F5A8B3957B}</UniqueIdentifier>
+      <UniqueIdentifier>{E3C7DD43-A426-347D-A199-9EB943618AD1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Precompile Header File">
-      <UniqueIdentifier>{41EDD1EF-AB8F-3AD6-B476-598B198B9EAF}</UniqueIdentifier>
+      <UniqueIdentifier>{59C6E4FD-417A-3E4D-A0A2-A3C437CD61F8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{9E117DA8-5637-355E-AF46-DE64AA4079CA}</UniqueIdentifier>
+      <UniqueIdentifier>{8518A8EB-87CF-322E-BD08-A1E7742736C7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

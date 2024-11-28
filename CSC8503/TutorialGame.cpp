@@ -104,7 +104,7 @@ void TutorialGame::UpdateGame(float dt) {
 	UpdateKeys();
 
 	if (useGravity) {
-		Debug::Print("(G)ravity on", Vector2(5, 95), Debug::RED);
+		Debug::Print("(G)ravity on", Vector2(5, 95), Debug::MAGENTA);
 	}
 	else {
 		Debug::Print("(G)ravity off", Vector2(5, 95), Debug::RED);
