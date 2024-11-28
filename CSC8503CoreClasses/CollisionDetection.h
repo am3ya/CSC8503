@@ -19,8 +19,8 @@ namespace NCL {
 	{
 	public:
 		struct ContactPoint {
-			Vector3 localA;
-			Vector3 localB;
+			Vector3 localA; //Where did the collision occur
+			Vector3 localB; //in the frame of each object
 			Vector3 normal;
 			float	penetration;
 		};
