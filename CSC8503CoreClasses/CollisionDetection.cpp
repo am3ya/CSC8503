@@ -169,8 +169,8 @@ bool CollisionDetection::ObjectIntersection(GameObject* a, GameObject* b, Collis
 	collisionInfo.a = a;
 	collisionInfo.b = b;
 
-	Transform& transformA = a->GetTransform();
-	Transform& transformB = b->GetTransform();
+	const Transform& transformA = a->GetTransform();
+	const Transform& transformB = b->GetTransform();
 
 	VolumeType pairType = (VolumeType)((int)volA->type | (int)volB->type);
 
@@ -281,7 +281,7 @@ bool CollisionDetection::AABBIntersection(const AABBVolume& volumeA, const Trans
 		float penetration = FLT_MAX;
 		Vector3 bestAxis;
 
-		for (int i = 0; i < 6; ++i) {
+		for (int i = 0; i < 6; i++) {
 			if (distances[i] < penetration) {
 				penetration = distances[i];
 				bestAxis = faces[i];
