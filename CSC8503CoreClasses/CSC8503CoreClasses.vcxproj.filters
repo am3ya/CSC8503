@@ -118,10 +118,10 @@
     <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\OBBVolume.h">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\QuadTree.h">
+    <ClCompile Include="QuadTree.h">
       <Filter>Collision Detection</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\QuadTree.cpp">
+    <ClCompile Include="QuadTree.cpp">
       <Filter>Collision Detection</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\Ameya\CSC8503 Code 2024\CSC8503CoreClasses\Ray.h">

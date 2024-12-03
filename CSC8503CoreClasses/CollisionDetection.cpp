@@ -6,6 +6,7 @@
 #include "Window.h"
 #include "Maths.h"
 #include "Debug.h"
+#include "QuadTree.cpp"
 
 using namespace NCL;
 
