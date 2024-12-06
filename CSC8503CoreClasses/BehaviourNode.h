@@ -1,4 +1,5 @@
 #pragma once
+#include <string> //Not in file but in tutorial
 
 enum BehaviourState {
 	Initialise,

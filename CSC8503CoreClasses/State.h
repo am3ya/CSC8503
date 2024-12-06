@@ -1,4 +1,6 @@
 #pragma once
+#include <functional> //Was in tutorial code but not in this file
+                      //So I added it
 
 namespace NCL {
 	namespace CSC8503 {
