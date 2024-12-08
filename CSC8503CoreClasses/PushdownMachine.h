@@ -1,4 +1,5 @@
 #pragma once
+#include <stack> //Not in file but in tutorial
 
 namespace NCL {
 	namespace CSC8503 {
