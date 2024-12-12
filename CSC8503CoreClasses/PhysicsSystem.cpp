@@ -207,6 +207,9 @@ void PhysicsSystem::BasicCollisionDetection() {
 			}
 			CollisionDetection::CollisionInfo info;
 			if (CollisionDetection::ObjectIntersection(*i, *j, info)) {
+				if ((*i)->GetName() == "Zone" && (*j)->GetName() == "Zone") {
+					continue;
+				}
 				ImpulseResolveCollision(*info.a, *info.b, info.point);
 				std::cout << "Collision between " << (*i)->GetName() << " and " << (*j)->GetName() << std::endl;
 				info.framesLeft = numCollisionFrames;

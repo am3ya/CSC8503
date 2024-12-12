@@ -26,6 +26,10 @@ namespace NCL::CSC8503 {
 			return isActive;
 		}
 
+		bool GetKeyCollected() {
+			return this->keyCollected;
+		}
+
 		Transform& GetTransform() {
 			return transform;
 		}
@@ -52,6 +56,14 @@ namespace NCL::CSC8503 {
 
 		const std::string& GetName() const {
 			return name;
+		}
+
+		void SetName(std::string name) {
+			this->name = name;
+		}
+
+		void SetKeyCollected(bool state) {
+			this->keyCollected = state;
 		}
 
 		virtual void OnCollisionBegin(GameObject* otherObject) {
@@ -83,6 +95,7 @@ namespace NCL::CSC8503 {
 		NetworkObject*		networkObject;
 
 		bool		isActive;
+		bool keyCollected = false;
 		int			worldID;
 		std::string	name;
 
