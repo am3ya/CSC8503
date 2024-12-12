@@ -10,6 +10,7 @@ https://research.ncl.ac.uk/game/
 #include "Vector.h"
 #include "Matrix.h"
 #include "Controller.h"
+#include <cmath>
 
 namespace NCL {
 	using namespace NCL::Maths;
@@ -55,6 +56,18 @@ namespace NCL {
 		Camera& SetController(const Controller& c) {
 			activeController = &c;
 			return *this;
+		}
+
+		void LookAt(const Vector3& target) {
+			Vector3 direction = target - position;
+			Vector::Normalise(direction);
+
+			float yaw = atan2(direction.x, direction.z) * 180.0f / PI;
+
+			float pitch = -asin(direction.y) * 180.0f / PI;
+
+			SetYaw(yaw);
+			SetPitch(pitch);
 		}
 
 		//Builds a view matrix for the current camera variables, suitable for sending straight

@@ -12,7 +12,7 @@ https://research.ncl.ac.uk/game/
 namespace NCL::Maths {
 
     template <typename T, uint32_t n>
-    struct VectorTemplate    {
+    struct VectorTemplate {
         T array[n];
 
         inline T operator[](int i) const {
@@ -51,7 +51,7 @@ namespace NCL::Maths {
             };
         };
 
-        VectorTemplate<T, 2>() : x(0),y(0) {
+        VectorTemplate<T, 2>() : x(0), y(0) {
         }
 
         VectorTemplate<T, 2>(T inX, T inY) : x(inX), y(inY) {
@@ -197,7 +197,7 @@ namespace NCL::Maths {
     }
 
     template <typename T, uint32_t n>
-    inline VectorTemplate<T, n>&  operator+=(VectorTemplate<T, n>& a, const VectorTemplate<T, n>& b) {
+    inline VectorTemplate<T, n>& operator+=(VectorTemplate<T, n>& a, const VectorTemplate<T, n>& b) {
         for (int i = 0; i < n; ++i) {
             a[i] = a[i] + b[i];
         }
