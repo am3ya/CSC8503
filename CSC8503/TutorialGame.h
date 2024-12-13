@@ -56,14 +56,18 @@ namespace NCL {
 			void DebugObjectMovement();
 			void LockedObjectMovement();
 			void CheckForKeyCollection();
+			void SecondEnemySpawn();
 			
+			GameObject* AddSecondFloorToWorld();
 			GameObject* AddFloorToWorld(const Vector3& position); //This was const
 			GameObject* AddSphereToWorld(const Vector3& position, float radius, float inverseMass = 10.0f);
 			GameObject* AddCubeToWorld(const Vector3& position, Vector3 dimensions, float inverseMass = 10.0f);
 			GameObject* AddZoneToWorld(const Vector3& position, Vector3 dimensions, float inverseMass = 10.0f);
 
 			GameObject* AddPlayerToWorld(const Vector3& position);
+			GameObject* AddFloatingCat(const Vector3& position);
 			GameObject* AddEnemyToWorld(const Vector3& position);
+			void UpdateAI(float dt);
 			GameObject* AddBonusToWorld(const Vector3& position);
 			GameObject* AddYarnToWorld(const Vector3& position, float radius, float inverseMass = 10.0f);
 			GameObject* playerObject;
@@ -101,6 +105,12 @@ namespace NCL {
 			Mesh* kittenMesh = nullptr;
 			Mesh* enemyMesh = nullptr;
 			Mesh* bonusMesh = nullptr;
+			std::vector<GameObject*> floatingCats;
+			bool enemySpawn = false;
+			float elapsedTime = 0.0f;
+			bool timerActive = false;
+			bool caught = false;
+			bool victory = false;
 
 			//Coursework Additional functionality	
 			GameObject* lockedObject = nullptr;

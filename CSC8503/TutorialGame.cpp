@@ -25,6 +25,7 @@ TutorialGame::TutorialGame() : controller(*Window::GetWindow()->GetKeyboard(), *
 #endif
 
 	physics = new PhysicsSystem(*world);
+	//std::vector<GameObject*> floatingCats;
 
 	forceMagnitude = 10.0f;
 	useGravity = true;
@@ -153,6 +154,8 @@ void TutorialGame::UpdateGame(float dt) {
 		Debug::Print("Press P to play!", Vector2(5, 95), Debug::RED);
 		if (Window::GetKeyboard()->KeyPressed(KeyCodes::P)) {
 			lockedObject = playerObject;
+			elapsedTime = 0.0f;
+			timerActive = true;
 		}
 	}
 	if (lockedObject != nullptr) {
@@ -173,6 +176,14 @@ void TutorialGame::UpdateGame(float dt) {
 		if (Window::GetKeyboard()->KeyPressed(KeyCodes::V)) {
 			lockedObject = nullptr;
 		}
+	}
+
+	if (timerActive) {
+		elapsedTime += dt;
+		int seconds = static_cast<int>(elapsedTime);
+		int milliseconds = static_cast<int>((elapsedTime - seconds) * 1000);
+		std::string timerText = std::to_string(seconds) + "." + (milliseconds < 100 ? "0" : "") + std::to_string(milliseconds);
+		Debug::Print(timerText, Vector2(40, 5));
 	}
 
 	//UpdateKeys();
@@ -212,11 +223,12 @@ void TutorialGame::UpdateGame(float dt) {
 	SelectObject();
 	MoveSelectedObject();
 
-	world->UpdateWorld(dt);
-	renderer->Update(dt);
-	physics->Update(dt);
-	UpdatePlayer(dt);
-	CheckForKeyCollection();
+	//world->UpdateWorld(dt);
+	//renderer->Update(dt);
+	//physics->Update(dt);
+	//UpdatePlayer(dt);
+	//CheckForKeyCollection();
+	//UpdateAI(dt);
 
 	if (playerObject->GetKeyCollected()) {
 		//InitCamera();
@@ -225,13 +237,92 @@ void TutorialGame::UpdateGame(float dt) {
 	}
 
 	if (playerObject->GetTransform().GetPosition().y < -26.0f) {
-		Debug::Print("You fell off! Press R to play again or ESC to quit", Vector2(5, 50));
+		Debug::Print("You fell off! Press R to play again or ESC to quit", Vector2(1, 50));
+		floatingCats.clear();
+		timerActive = false;
+		int seconds = static_cast<int>(elapsedTime);
+		int milliseconds = static_cast<int>((elapsedTime - seconds) * 1000);
+		std::string timerText = std::to_string(seconds) + "." + (milliseconds < 100 ? "0" : "") + std::to_string(milliseconds);
+		Debug::Print(timerText, Vector2(40, 5));
 
 		if (Window::GetKeyboard()->KeyPressed(KeyCodes::R)) {
 			InitCamera();
 			InitWorld();
 		}
 	}
+
+	if (floatingCats.size() == 4) {
+		Debug::Print("All kittens collected!", Vector2(60, 5));
+	}
+	if (floatingCats.size() < 4) {
+		std::string kittensText = "Kittens collected: " + std::to_string(floatingCats.size()) + "/4";
+		Debug::Print(kittensText, Vector2(5, 85));
+	}
+	if (enemySpawn == true) {
+		//AddEnemyToWorld(Vector3(-30, -15, -263));
+		//AddEnemyToWorld(Vector3(30, -15, -265));
+		//AddEnemyToWorld(Vector3(-30, -15, -363));
+		//AddEnemyToWorld(Vector3(30, -15, -365));
+		//InitCamera();
+		SecondEnemySpawn();
+		enemySpawn = false;
+	}
+
+	if (caught == true) {
+		InitCamera();
+		Debug::Print("You got caught! Press R to play again or ESC to quit", Vector2(1, 50));
+		floatingCats.clear();
+		timerActive = false;
+		int seconds = static_cast<int>(elapsedTime);
+		int milliseconds = static_cast<int>((elapsedTime - seconds) * 1000);
+		std::string timerText = std::to_string(seconds) + "." + (milliseconds < 100 ? "0" : "") + std::to_string(milliseconds);
+		Debug::Print(timerText, Vector2(40, 5));
+
+		if (Window::GetKeyboard()->KeyPressed(KeyCodes::R)) {
+			caught = false;
+			InitCamera();
+			InitWorld();
+		}
+	}
+
+	if (victory == true) {
+		if (floatingCats.size() == 4 && playerObject->GetKeyCollected() == true) {
+			InitCamera();
+			timerActive = false;
+			int seconds = static_cast<int>(elapsedTime);
+			int milliseconds = static_cast<int>((elapsedTime - seconds) * 1000);
+			std::string timerText = std::to_string(seconds) + "." + (milliseconds < 100 ? "0" : "") + std::to_string(milliseconds);
+			std::string victoryText = "Congratulations! You escaped in " + timerText + " seconds!";
+			Debug::Print(victoryText, Vector2(1, 50));
+
+			if (Window::GetKeyboard()->KeyPressed(KeyCodes::R)) {
+				floatingCats.clear();
+				victory = false;
+				InitCamera();
+				InitWorld();
+			}
+		}
+		//InitCamera();
+		//timerActive = false;
+		//int seconds = static_cast<int>(elapsedTime);
+		//int milliseconds = static_cast<int>((elapsedTime - seconds) * 1000);
+		//std::string timerText = std::to_string(seconds) + "." + (milliseconds < 100 ? "0" : "") + std::to_string(milliseconds);
+		//std::string victoryText = "Congratulations! You escaped in " + timerText + " seconds!";
+		//Debug::Print(victoryText, Vector2(1, 50));
+
+		//if (Window::GetKeyboard()->KeyPressed(KeyCodes::R)) {
+			//victory = false;
+			//InitCamera();
+			//InitWorld();
+		//}
+	}
+
+	world->UpdateWorld(dt);
+	renderer->Update(dt);
+	physics->Update(dt);
+	UpdatePlayer(dt);
+	CheckForKeyCollection();
+	UpdateAI(dt);
 
 	renderer->Render();
 	Debug::UpdateRenderables(dt);
@@ -407,6 +498,28 @@ GameObject* TutorialGame::AddFloorToWorld(const Vector3& position) { //This was 
 	return floor;
 }
 
+GameObject* TutorialGame::AddSecondFloorToWorld() {
+	GameObject* secondFloor = new GameObject();
+
+	Vector3 floorSize = Vector3(200, 2, 200);
+	AABBVolume* volume = new AABBVolume(floorSize);
+	secondFloor->SetBoundingVolume((CollisionVolume*)volume);
+	secondFloor->GetTransform()
+		.SetScale(floorSize * 2.0f)
+		.SetPosition(Vector3(0, -20, -413));
+
+	secondFloor->SetRenderObject(new RenderObject(&secondFloor->GetTransform(), cubeMesh, basicTex, basicShader));
+	secondFloor->SetPhysicsObject(new PhysicsObject(&secondFloor->GetTransform(), secondFloor->GetBoundingVolume()));
+
+	secondFloor->GetPhysicsObject()->SetInverseMass(0);
+	secondFloor->GetPhysicsObject()->InitCubeInertia();
+
+	world->AddGameObject(secondFloor);
+
+	return secondFloor;
+}
+
+
 /*
 
 Builds a game object that uses a sphere mesh for its graphics, and a bounding sphere for its
@@ -531,12 +644,31 @@ GameObject* TutorialGame::AddPlayerToWorld(const Vector3& position) {
 	return character;
 }
 
+GameObject* TutorialGame::AddFloatingCat(const Vector3& position) {
+	GameObject* cat = new GameObject();
+	cat->SetName("FloatingCat");
+
+	SphereVolume* volume = new SphereVolume(1.0f);
+	cat->SetBoundingVolume((CollisionVolume*)volume);
+
+	cat->GetTransform().SetScale(Vector3(0.6, 0.6, 0.6)).SetPosition(position);
+
+	cat->SetRenderObject(new RenderObject(&cat->GetTransform(), catMesh, nullptr, basicShader));
+	cat->SetPhysicsObject(new PhysicsObject(&cat->GetTransform(), cat->GetBoundingVolume()));
+	cat->GetRenderObject()->SetColour(Vector4(0, 1, 0, 1));
+	cat->GetPhysicsObject()->SetInverseMass(0);
+
+	world->AddGameObject(cat);
+	return cat;
+}
+
 GameObject* TutorialGame::AddEnemyToWorld(const Vector3& position) {
 	float meshSize = 3.0f;
 	float inverseMass = 0.5f;
 
 	GameObject* character = new GameObject();
 
+	character->SetName("Enemy");
 	AABBVolume* volume = new AABBVolume(Vector3(0.3f, 0.9f, 0.3f) * meshSize);
 	character->SetBoundingVolume((CollisionVolume*)volume);
 
@@ -550,9 +682,132 @@ GameObject* TutorialGame::AddEnemyToWorld(const Vector3& position) {
 	character->GetPhysicsObject()->SetInverseMass(inverseMass);
 	character->GetPhysicsObject()->InitSphereInertia();
 
+	character->SetSpeed(3.0f);
+
 	world->AddGameObject(character);
 
 	return character;
+}
+
+/*void TutorialGame::UpdateAI(float dt) {
+	for (GameObject* obj : world->GetGameObjects()) {
+		if (obj->GetName() == "EnemyOne" || obj->GetName() == "EnemyTwo") {
+			Vector3 position = obj->GetTransform().GetPosition();
+			//float speed = 3.0f;
+			Vector3 playerPos = playerObject->GetTransform().GetPosition();
+			Vector3 direction = Vector::Normalise((playerPos - position));
+
+			//position.x += speed * dt;
+			position.x += obj->GetSpeed() * dt;
+
+			if (position.x > 30.0f || position.x < -30.0f) {
+				//speed = -speed;
+				obj->SetSpeed(-(obj->GetSpeed()));
+			}
+			//obj->GetTransform().SetPosition(position);
+
+			Vector3 rayDirection = Vector3(obj->GetSpeed() > 0 ? 1 : -1, 0, 0);
+			Ray ray(position, rayDirection);
+			RayCollision collision;
+
+			if (world->Raycast(ray, collision, true)) {
+				GameObject* hitObject = (GameObject*)collision.node;
+
+				if (hitObject == playerObject) {
+					Vector3 chaseForce = direction * 5.0f;
+					obj->GetPhysicsObject()->AddForce(chaseForce);
+				}
+			}
+
+			obj->GetTransform().SetPosition(position);
+		}
+	}
+}*/
+
+void TutorialGame::UpdateAI(float dt) {
+	for (GameObject* obj : world->GetGameObjects()) {
+		if (obj->GetName() == "Enemy") {
+			Vector3 position = obj->GetTransform().GetPosition();
+			//float speed = 3.0f;
+			Vector3 playerPos = playerObject->GetTransform().GetPosition();
+			Vector3 direction = Vector::Normalise((playerPos - position));
+
+			if (obj->GetChase() == false) {
+				position.x += obj->GetSpeed() * dt;
+
+				if (position.x > 30.0f || position.x < -30.0f) {
+					//speed = -speed;
+					obj->SetSpeed(-(obj->GetSpeed()));
+				}
+
+				Vector3 rayDirection = Vector3(obj->GetSpeed() > 0 ? 1 : -1, 0, 0);
+				Ray ray(position, (rayDirection * 10.0f));
+				RayCollision collision;
+
+				if (world->Raycast(ray, collision, true)) {
+					GameObject* hitObject = (GameObject*)collision.node;
+
+					if (hitObject == playerObject) {
+						obj->setChase(true);
+					}
+				}
+				//obj->GetTransform().SetPosition(position);
+			else {
+					Vector3 chaseForce = direction * 5.0f;
+					obj->GetPhysicsObject()->AddForce(chaseForce);
+
+					Ray ray(position, (direction * 15.0f));
+					RayCollision collision;
+
+					if (!world->Raycast(ray, collision, true) || collision.node != playerObject) {
+						obj->setChase(false);
+					}
+				}
+
+				obj->GetTransform().SetPosition(position);
+		    }
+		}
+		if (obj->GetName() == "floatingCatTwo" && obj->GetFollow() == true) {
+			Vector3 playerPos = playerObject->GetTransform().GetPosition();
+			Quaternion playerRotation = playerObject->GetTransform().GetOrientation();
+
+			Vector3 offset = Vector3(0.5f, 0, -2.0f); // Offset behind the player
+			Vector3 followPosition = playerPos + playerRotation * offset;
+
+			obj->GetTransform().SetPosition(followPosition);
+			obj->GetTransform().SetOrientation(playerRotation);
+		}
+		if (obj->GetName() == "floatingCatOne" && obj->GetFollow() == true) {
+			Vector3 playerPos = playerObject->GetTransform().GetPosition();
+			Quaternion playerRotation = playerObject->GetTransform().GetOrientation();
+
+			Vector3 offset = Vector3(2.5f, 0, -2.0f); // Offset behind the player
+			Vector3 followPosition = playerPos + playerRotation * offset;
+
+			obj->GetTransform().SetPosition(followPosition);
+			obj->GetTransform().SetOrientation(playerRotation);
+		}
+		if (obj->GetName() == "floatingCatThree" && obj->GetFollow() == true) {
+			Vector3 playerPos = playerObject->GetTransform().GetPosition();
+			Quaternion playerRotation = playerObject->GetTransform().GetOrientation();
+
+			Vector3 offset = Vector3(-1.5f, 0, -2.0f); // Offset behind the player
+			Vector3 followPosition = playerPos + playerRotation * offset;
+
+			obj->GetTransform().SetPosition(followPosition);
+			obj->GetTransform().SetOrientation(playerRotation);
+		}
+		if (obj->GetName() == "floatingCatFour" && obj->GetFollow() == true) {
+			Vector3 playerPos = playerObject->GetTransform().GetPosition();
+			Quaternion playerRotation = playerObject->GetTransform().GetOrientation();
+
+			Vector3 offset = Vector3(4.5f, 0, -2.0f); // Offset behind the player
+			Vector3 followPosition = playerPos + playerRotation * offset;
+
+			obj->GetTransform().SetPosition(followPosition);
+			obj->GetTransform().SetOrientation(playerRotation);
+		}
+	}
 }
 
 GameObject* TutorialGame::AddBonusToWorld(const Vector3& position) {
@@ -602,11 +857,43 @@ void TutorialGame::InitDefaultFloor() {
 
 void TutorialGame::InitGameExamples() {
 	//AddPlayerToWorld(Vector3(0, 5, 0));
-	AddEnemyToWorld(Vector3(5, -15, 0));
-	AddBonusToWorld(Vector3(10, -15, 0));
-	AddYarnToWorld(Vector3(0, -15, -8), 0.8f);
-	AddZoneToWorld(Vector3(5, -17, -100), Vector3(1, 1, 1)); //z = -200 is the very edge of the floor
+	//AddEnemyToWorld(Vector3(5, -15, 0));
+	AddEnemyToWorld(Vector3(-30, -15, -50));
+	AddEnemyToWorld(Vector3(30, -15, -52));
+	AddEnemyToWorld(Vector3(-30, -15, -150));
+	AddEnemyToWorld(Vector3(30, -15, -152));
+	//AddEnemyToWorld(Vector3(-30, -15, -263));
+	//AddEnemyToWorld(Vector3(30, -15, -265));
+	//AddEnemyToWorld(Vector3(-30, -15, -363));
+	//AddEnemyToWorld(Vector3(30, -15, -365));
+	//AddBonusToWorld(Vector3(10, -15, 0));
+	GameObject* yarn = AddYarnToWorld(Vector3(5, -17, -280), 0.8f);
+	yarn->SetName("yarn");
+	GameObject* keyBlock = AddZoneToWorld(Vector3(5, -17, -300), Vector3(1, 1, 1)); //z = -200 is the very edge of the floor
+	keyBlock->SetName("keyBlock");
+	GameObject* endZone = AddZoneToWorld(Vector3(5, -17, -350), Vector3(1, 1, 1)); //z = -200 is the very edge of the floor
+	endZone->SetName("endZone");
 	AddZigZagToWorld();
+	AddSecondFloorToWorld();
+	GameObject* floatingCatOne = AddFloatingCat(Vector3(1, -17, -206));
+	floatingCatOne->SetName("floatingCatOne");
+	GameObject* floatingCatTwo = AddFloatingCat(Vector3(-20, -17, -75));
+	floatingCatTwo->SetName("floatingCatTwo");
+	GameObject* floatingCatThree = AddFloatingCat(Vector3(5, -17, -226));
+	floatingCatThree->SetName("floatingCatThree");
+	GameObject* floatingCatFour = AddFloatingCat(Vector3(1, -17, -256));
+	floatingCatFour->SetName("floatingCatFour");
+}
+
+void TutorialGame::SecondEnemySpawn() {
+	GameObject* enemy1 = AddEnemyToWorld(Vector3(-30, -15, -263));
+	enemy1->SetName("Enemy");
+	GameObject* enemy2 = AddEnemyToWorld(Vector3(30, -15, -265));
+	enemy2->SetName("Enemy");
+	GameObject* enemy3 = AddEnemyToWorld(Vector3(-30, -15, -363));
+	enemy3->SetName("Enemy");
+	GameObject* enemy4 = AddEnemyToWorld(Vector3(30, -15, -365));
+	enemy4->SetName("Enemy");
 }
 
 void TutorialGame::CheckForKeyCollection() {
@@ -624,11 +911,63 @@ void TutorialGame::CheckForKeyCollection() {
 			}
 			CollisionDetection::CollisionInfo info;
 			if (CollisionDetection::ObjectIntersection(*i, *j, info)) {
-				if ((*i)->GetName() == "Yarn" && (*j)->GetName() == "Zone") {
+				if ((*i)->GetName() == "yarn" && (*j)->GetName() == "keyBlock") {
 					//playerObject->SetKeyCollected(true);
 					(*j)->GetRenderObject()->SetColour(Vector4(0, 1, 0, 1));
 					playerObject->SetKeyCollected(true);
 					//Debug::Print("Key collected!", Vector2(5, 95));
+				}
+				//if ((*i)->GetName() == "Player" && (*j)->GetName() == "floatingCatTwo") {
+					//(*j)->GetPhysicsObject()->ClearForces();
+					//(*j)->SetPhysicsObject(nullptr);
+					//floatingCats.push_back((*j));
+					//(*j)->setFollow(true);
+				//}
+				if ((*i)->GetName() == "floatingCatTwo" && (*j)->GetName() == "Player") {
+					(*i)->GetPhysicsObject()->ClearForces();
+					//(*i)->SetPhysicsObject(nullptr);
+					floatingCats.push_back((*i));
+					(*i)->setFollow(true);
+					(*i)->SetBoundingVolume(nullptr);
+				}
+				//if ((*i)->GetName() == "Player" && (*j)->GetName() == "floatingCatOne") {
+					//(*j)->GetPhysicsObject()->ClearForces();
+					//floatingCats.push_back((*j));
+					//(*j)->setFollow(true);
+					//enemySpawn = true;
+				//}
+				if ((*i)->GetName() == "floatingCatOne" && (*j)->GetName() == "Player") {
+					(*i)->GetPhysicsObject()->ClearForces();
+					floatingCats.push_back((*i));
+					(*i)->setFollow(true);
+					(*i)->SetBoundingVolume(nullptr);
+					enemySpawn = true;
+				}
+				if ((*i)->GetName() == "Enemy" && (*j)->GetName() == "Player") {
+					caught = true;
+				}
+				if ((*i)->GetName() == "Player" && (*j)->GetName() == "Enemy") {
+					caught = true;
+				}
+				if ((*i)->GetName() == "floatingCatThree" && (*j)->GetName() == "Player") {
+					(*i)->GetPhysicsObject()->ClearForces();
+					//(*i)->SetPhysicsObject(nullptr);
+					floatingCats.push_back((*i));
+					(*i)->SetBoundingVolume(nullptr);
+					(*i)->setFollow(true);
+				}
+				if ((*i)->GetName() == "floatingCatFour" && (*j)->GetName() == "Player") {
+					(*i)->GetPhysicsObject()->ClearForces();
+					//(*i)->SetPhysicsObject(nullptr);
+					floatingCats.push_back((*i));
+					(*i)->SetBoundingVolume(nullptr);
+					(*i)->setFollow(true);
+				}
+				if ((*i)->GetName() == "endZone" && (*j)->GetName() == "Player") {
+					victory = true;
+				}
+				if ((*i)->GetName() == "Player" && (*j)->GetName() == "endZone") {
+					victory = true;
 				}
 			}
 		}
@@ -715,7 +1054,7 @@ bool TutorialGame::SelectObject() {
 		}
 	}
 	if (inSelectionMode) {
-		Debug::Print("Press Q to change to camera mode!", Vector2(5, 85));
+		//Debug::Print("Press Q to change to camera mode!", Vector2(5, 85));
 
 		if (Window::GetMouse()->ButtonDown(NCL::MouseButtons::Left)) {
 			if (selectionObject) {	//set colour to deselected;
@@ -748,7 +1087,7 @@ bool TutorialGame::SelectObject() {
 		}
 	}
 	else {
-		Debug::Print("Press Q to change to select mode!", Vector2(5, 85));
+		//Debug::Print("Press Q to change to select mode!", Vector2(5, 85));
 	}
 	return false;
 }
@@ -761,7 +1100,7 @@ line - after the third, they'll be able to twist under torque aswell.
 */
 
 void TutorialGame::MoveSelectedObject() {
-	Debug::Print("Click Force:" + std::to_string(forceMagnitude), Vector2(5, 90));
+	//Debug::Print("Click Force:" + std::to_string(forceMagnitude), Vector2(5, 90));
 	forceMagnitude += Window::GetMouse()->GetWheelMovement() * 100.0f;
 
 	if (!selectionObject) {
