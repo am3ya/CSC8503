@@ -30,6 +30,18 @@ namespace NCL::CSC8503 {
 			return this->keyCollected;
 		}
 
+		bool GetChase() {
+			return this->isChasing;
+		}
+
+		bool GetFollow() {
+			return this->follow;
+		}
+
+		float GetSpeed() {
+			return this->speed;
+		}
+
 		Transform& GetTransform() {
 			return transform;
 		}
@@ -66,6 +78,18 @@ namespace NCL::CSC8503 {
 			this->keyCollected = state;
 		}
 
+		void SetSpeed(float speed) {
+			this->speed = speed;
+		}
+
+		void setChase(bool state) {
+			this->isChasing = state;
+		}
+
+		void setFollow(bool state) {
+			this->follow = state;
+		}
+
 		virtual void OnCollisionBegin(GameObject* otherObject) {
 			//std::cout << "OnCollisionBegin event occured!\n";
 		}
@@ -96,8 +120,11 @@ namespace NCL::CSC8503 {
 
 		bool		isActive;
 		bool keyCollected = false;
+		bool isChasing = false;
+		float speed;
 		int			worldID;
 		std::string	name;
+		bool follow = false;
 
 		Vector3 broadphaseAABB;
 	};
